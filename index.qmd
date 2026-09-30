@@ -28,7 +28,7 @@ execute:
   warning: false
 ---
 
-## Misinformation on social media
+## The prevalence of misinformation on social media
 
 ::: columns
 
@@ -38,21 +38,26 @@ execute:
 
 - Misinformation<sup>1</sup> makes up only a **small fraction** of shared and consumed news online<sup>2</sup>, 
 
-- while being concentrated and persistent in politically extreme communities [@allenEvaluatingFakeNews2020; @baribi-bartovSupersharersFakeNews2024; @gonzalez-bailonDiffusionReachMisInformation2024]
+- while being concentrated in politically extreme communities [@allenEvaluatingFakeNews2020; @baribi-bartovSupersharersFakeNews2024; @gonzalez-bailonDiffusionReachMisInformation2024]
 
+
+::: fragment
+
+$\rightarrow$ how **harmful** is misinformation on social media then?
+
+:::
 
 :::
 
 ::: {.column width="50%"}
 
-![**Figure 1.** Exposure to elite misinformation is associated with sharing lower-quality outlets and with conservative estimated ideology [@moslehMeasuringExposureMisinformation2022].](figures/political-asymmetry.png){width="350" .right}
+![**Figure 1.** Exposure to elite misinformation is associated with sharing lower-quality outlets and with conservative estimated ideology [@moslehMeasuringExposureMisinformation2022].](figures/political-asymmetry.png){width="350" fig-align="right"}
 
 
 :::
 
 :::
 
-- Lack of causal evidence of its effects [@lorenz-spreenSystematicReviewWorldwide2022;  @budakMisunderstandingHarmsOnline2024; @tayCausalInferenceMisinformation2024] 
 
 ::: footer
 <sup>1</sup>*=false information without intention to deceive*  [@wardleInformationDisorderInterdisciplinary2017]; <br>
@@ -60,35 +65,61 @@ execute:
 :::
 
 
-## Socio-affective dynamics online
+::: notes
+
+- Numerous studies have documented that misinformation makes up only a small fraction of online news consumption, ranging from 0.1 to 20% depending on the topic and measurement
+
+- However, when we look at the users who are exposed to it only, we typically see this banana shape, with right-wing and conservative users being exposed to or actively sharing misinformation
+
+- This raises the question of how harmful misinformation is beyond prevalence 
+
+
+:::
+
+## Effects of misinformation beyond belief
 
 ::: columns
 
-::: {.column width="50%"}
-
 <br>
 
-- Misinformation spreads in emotionally charged environments: moral outrage, affective polarization, intergroup conflict [@mcloughlinMisinformationExploitsOutrage2024; @moslehMisinformationHarmfulLanguage2024]
+::: {.column width="45%"}
+
+
+### Individual-level experiments show
+
+- reinforces partisan (mis-)beliefs [@eckerPsychologicalDriversMisinformation2022]
+
+- secondary effects on uncertainty and distrust [@vaccariDeepfakesDisinformationExploring2020]
+
+- negative emotions and hate [@luhringEmotionsMisinformationStudies2024]
+
+
+
+:::
+
+::: {.column width="45%"}
+
 
 ::: fragment
 
-- Socio-affective dynamics relate to **collectively expressed** emotions<sup>1</sup> [@goldenbergCollectiveEmotions2020]
+### But they suffer from [low ecological validity]
+
+- artificial stimuli [also because deliberate exposure raises ethical concerns; @lazerMeaningfulMeasuresHuman2021]
+
+- science-friendly samples [e.g., @luhringEmotionsMisinformationStudies2024]
+
+- cannot capture group- or platform-level interactions [@bak-colemanMovingInformativeActionable2025]
 
 :::
-
-
-:::
-
-::: {.column width="50%"}
-
-![**Figure 2.** Multilevel model of misinformation spread [ @frischlichComplexityMisinformationExtends2025].](figures/frischlichetal.png)
 
 :::
 
 :::
 
 ::: fragment
-$\rightarrow$ effects of misinformation on social media therefore at the level of **discussions & communities**
+
+$\rightarrow$ study effects of misinformation where it spreads
+
 :::
 
 
@@ -110,42 +141,40 @@ $\rightarrow$ effects of misinformation on social media therefore at the level o
 -   A major concern is then not just how many people believe misinformation but its secondary effects on discussions
 :::
 
-# What are the effects of misinformation on online interactions?
-
-
-## Methodological implications
+## Effects of misinformation beyond exposure
 
 <br>
 
 ::: columns
-::: {.column width="48%"}
 
-### Misinformation sampling
+::: {.column width="50%"}
 
-- Fact-checked false stories are a sample of extreme cases [@vosoughiSpreadTrueFalse2018]
-- Source ratings cover the broader spectrum of news quality and include gray-area content
+### Observational social media data shows misinformation
 
-$\rightarrow$ we study **source trustworthiness**, not the falsity of single posts
+- overlaps with moral outrage and hate speech [@mcloughlinMisinformationExploitsOutrage2024; @moslehMisinformationHarmfulLanguage2024] $\rightarrow$ collective emotions<sup>1</sup> [@goldenbergCollectiveEmotions2020]
 
+- gets engagement [@vosoughiSpreadTrueFalse2018; @juulComparingInformationDiffusion2021]
 :::
+
 
 ::: {.column width="48%"}
 
 ::: fragment
 
-### Causal identification
+### But it suffers from [low internal validity]
 
-- Experiments: artificial stimuli, science-friendly samples, no group- or platform-level dynamics [@bak-colemanMovingInformativeActionable2025]; deliberate exposure raises ethical concerns [@lazerMeaningfulMeasuresHuman2021]
+-  Confounded by other source cues, hateful and sensationalist language, ...
 
-- Observational data: confounded by polarization, hate speech, and user self-selection
+    -  e.g., comparing fact-checked false stories to neutral news reports [@vosoughiSpreadTrueFalse2018]
+
+:::
 
 :::
 
-:::
 :::
 
 ::: fragment
-$\rightarrow$ calls to rethink causality and estimate effects **in the wild**
+$\rightarrow$ calls to rethink causality and estimate effects **in the wild** [@lorenz-spreenSystematicReviewWorldwide2022; @budakMisunderstandingHarmsOnline2024; @tayCausalInferenceMisinformation2024] 
 :::
 
 
@@ -159,9 +188,149 @@ We identified two problems that we wanted to tackle in this study
 -   Several people have called for rethinking causality in this field
 :::
 
+
+# What are the effects of misinformation on (collective) online interactions?
+
+
+
+## Data collection
+
+<br>
+
+- **Systematic and large-scale data set** for the German-speaking context: 9.9M news tweets, 11M replies (Oct 2020 -- Mar 2022)
+
+![**Figure 2.** Data collection and pre-processing pipeline.](figures/dataset-description_1.png){width="70%"} 
+
+
+
+
+## Dataset descriptives
+
+
+<br>
+
+::: columns
+
+::: {.column width="25%"}
+
+![**Figure 3.** Proportions of untrustworthy (<60; purple) and trustworthy (>60; green) news tweets.](figures/trustworthiness.png){width="200" fig-align="left"}
+
+<br>
+
+<br>
+
+- robust 6% of untrustworthy news
+
+:::
+
+::: {.column width="45%"}
+
+::: fragment
+
+![**Figure 4.** Probability of each news tweet containing each emotion (0-1), predicted by pol_emo_mDeBERTa2 [@widmannCreatingComparingDictionary2022].](figures/emotions_over_time.png){width="800"}
+
+<br>
+
+<br>
+
+<br>
+
+- anger and fear are overall higher across the whole observation period
+
+
+:::
+
+:::
+
+::: {.column width="30%"}
+
+::: fragment 
+
+
+![**Figure 5.** Correlations between the variables in news posts and discussions.](figures/covariates-correlations.png){width="400"}
+
+- emotional spillover into the discussions
+
+
+:::
+
+:::
+
+:::
+
+
+## Data collection (2)
+
+<br>
+
+![**Figure 6.** Data collection and pre-processing pipeline.](figures/dataset-description_2.png){width="95%"} 
+
+
+
 ## Matching as a middle ground
 
 ::: columns
+
+::: {.column width="40%"}
+
+<br>
+
+- keeps the **naturalistic context** of platform data
+
+- builds a **synthetic control group** comparable on observed confounders $\rightarrow$ blocks backdoor paths [@hoMatchingNonparametricPreprocessing2007; @pearlBookWhy2019]
+
+:::
+
+::: {.column width="60%"}
+
+```{dot}
+//| fig-width: 6
+//| fig-height: 4.2
+digraph DAG {
+  graph [rankdir=LR, bgcolor="transparent", nodesep=0.2, ranksep=0.35, fontname="Source Code Pro"];
+  node  [fontname="Source Code Pro", fontsize=15, shape=box, margin="0.35,0.12", height=0.8, style="rounded,filled", color="#003C78", penwidth=1.2];
+  edge  [color="#555555", arrowsize=0.8, penwidth=1.3];
+
+  // matched confounders (poster side)
+  bias   [label="Source bias", fillcolor="#DCEBF7"];
+  author [label="Author (followers,\n following, tweets)", fillcolor="#DCEBF7"];
+  post   [label="Post (topic,word\ncount, emotions)", fillcolor="#DCEBF7"];
+
+  // treatment, mediator, outcome
+  T [label="Untrustworthy news", fillcolor="#8A2BE2", fontcolor="white", color="#8A2BE2"];
+  Y [label="Engagement &\nreply emotions", fillcolor="#1E8CC8", fontcolor="white", color="#1E8CC8"];
+
+  {rank=same; bias; author; post}
+
+  bias -> T;   bias -> Y;
+  author -> T; author -> Y;
+  post -> T;   post -> Y;
+
+  T -> Y [penwidth=2.2, color="#8A2BE2"];
+}
+```
+
+[**Figure 7.** Directed Acylic Graph (DAG) with <span style="background:#DCEBF7;padding:0 4px">matched</span>; <span style="background:#8A2BE2;padding:0 4px">treatment</span>; <span style="background:#1E8CC8;padding:0 4px">outcome</span>.]{style="font-size:60%"}
+
+:::
+
+:::
+
+
+
+::: notes
+-   Matching as a middle ground: we keep the real-world context, but compare posts that are similar on the confounders we can observe
+-   Be clear about the estimand: source trustworthiness, at the level of news tweets and their discussions
+-   This rests on the assumption that, conditional on the covariates, assignment is as good as random. So each covariate needs a justification: is it a common cause (confounder), part of the pathway (mediator), or affected by both treatment and outcome (collider)?
+-   Example: emotion in the news tweet itself is plausibly a mediator, so we separate stimulus emotions from reply emotions
+:::
+
+
+
+## Matching as a middle ground
+
+::: columns
+
 ::: {.column width="40%"}
 
 <br>
@@ -170,10 +339,95 @@ We identified two problems that we wanted to tackle in this study
 
 - Instead of randomizing users, builds a **synthetic control group** comparable on observed confounders $\rightarrow$ blocks backdoor paths [@hoMatchingNonparametricPreprocessing2007; @pearlBookWhy2019]
 
-- **Limitation:** we only adjust for what we observe
+- Evaluate performance based on differences
+
 :::
 
 ::: {.column width="60%"}
+
+<br>
+
+![**Figure 8.** Matching with Nearest Neighbor and Mahalanobis distance [@hoMatchItNonparametricPreprocessing2025].](figures/mahalanobis_plot_all.png){width="100%"}
+
+
+:::
+
+:::
+
+
+
+
+
+
+
+## Confounder-adjusted effects on engagement
+
+<br>
+
+![**Figure 9.** Marginal effects estimated by zero-inflated negative binomial models (bootstrapped 95% CIs).](figures/effects_engagement.png){width="900"}
+
+<br>
+
+$\uparrow$ **more** retweets for tweets with untrustworthy news sources
+
+$\downarrow$ but **fewer** likes & replies
+
+
+## Confounder-adjusted effects on emotions
+
+<br>
+
+![**Figure 10.** ATE estimated by linear regression (95% CI represent 10,000 
+bootstraps).](figures/effects_emotions.png){width="800" fig-align="left"}
+
+<br>
+
+$\uparrow$ **more** anger, disgust and fear 
+
+$\downarrow$ and **less** joy in response to untrustworthy sources
+
+::: notes
+- most users replying to untrustworthy news posts also reply to trustworthy news but not vice versa. While 9.6% of
+users wrote 80% of the replies to trustworthy news, only 2.1% wrote 80% of the replies to untrustworthy news.
+:::
+
+## Self-selection dynamics
+
+::: columns
+
+::: {.column width="38%"}
+
+![**Figure 11.** Panel a: CDF of reply contributions (dashed = 80% threshold); Panel b: Anger  for top contributors (accounting for 80% of replies).](figures/effects_selection_1.png){width="600" fig-align="left"}
+
+:::
+
+::: {.column width="62%"}
+
+:::
+
+:::
+
+
+
+## Self-selection dynamics
+
+::: columns
+
+::: {.column width="38%"}
+
+![**Figure 11.** Panel a: CDF of reply contributions (dashed = 80% threshold); Panel b: Anger  for top contributors (accounting for 80% of replies).](figures/effects_selection_2.png){width="600" fig-align="left"}
+
+
+$\rightarrow$ angrier users preferentially engage, creating self-reinforcement
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="60%"}
+
+::: fragment
 
 ```{dot}
 //| fig-width: 6
@@ -192,7 +446,7 @@ digraph DAG {
   topic  [label="Unobserved", style="rounded,dashed", color="#888888", fontcolor="#666666"];
 
   // treatment, mediator, outcome
-  T [label="Untrustworthy\nsource", fillcolor="#8A2BE2", fontcolor="white", color="#8A2BE2"];
+  T [label="Untrustworthy news", fillcolor="#8A2BE2", fontcolor="white", color="#8A2BE2"];
   M [label="Self-selection,\ncuration", fillcolor="white", color="#1E8CC8"];
   Y [label="Engagement &\nreply emotions", fillcolor="#1E8CC8", fontcolor="white", color="#1E8CC8"];
 
@@ -204,210 +458,37 @@ digraph DAG {
   topic -> T [style=dashed, color="#888888"];
   topic -> Y [style=dashed, color="#888888"];
 
-  T -> M -> Y;
-  T -> Y [penwidth=2.2, color="#8A2BE2"];
+  T -> M -> Y [penwidth=2.2, color="#8A2BE2"];
 }
 ```
 
-[**Figure 3.** Directed Acylic Graph (DAG) with <span style="background:#DCEBF7;padding:0 4px">matched</span>; *dashed* = unobserved; <span style="color:#1E8CC8">**who replies**</span> = part of the effect, not matched.]{style="font-size:60%"}
+[**Figure 12.** Directed Acylic Graph (DAG) with <span style="background:#DCEBF7;padding:0 4px">matched</span>; *dashed* = unobserved; <span style="color:#1E8CC8">**who replies**</span> = part of the effect, not matched.]{style="font-size:60%"}
+
 
 :::
-:::
-
-
-
-::: notes
--   Matching as a middle ground: we keep the real-world context, but compare posts that are similar on the confounders we can observe
--   Be clear about the estimand: source trustworthiness, at the level of news tweets and their discussions
--   This rests on the assumption that, conditional on the covariates, assignment is as good as random. So each covariate needs a justification: is it a common cause (confounder), part of the pathway (mediator), or affected by both treatment and outcome (collider)?
--   Example: emotion in the news tweet itself is plausibly a mediator, so we separate stimulus emotions from reply emotions
-:::
-
-## Data collection
-
-<br>
-
-::: {.fragment style="position: absolute; top: 120px; left: 0px; width: 220px; z-index: 10; background: white;"}
-
-![@luhringBestPracticesSourcebased2025](figures/newsguard-de.png){width="200"}
-
-:::
-
-![**Figure 4.** Data collection and pre-processing pipeline.](figures/dataset-description.png){width="1500"} 
-
-
-$\rightarrow$ **Systematic and large-scale data set** for the German-speaking context: 9.9M news tweets, 11M replies (Oct 2020 -- Mar 2022)
-
-
-
-## Dataset descriptives
-
-::: columns
-
-::: {.column width="65%"}
-
-<br>
-
-![**Figure 5.** Probability of each tweet containing each emotion (0-1), predicted by pol_emo_mDeBERTa2 [@widmannCreatingComparingDictionary2022].](figures/emotions_over_time.png){width="800"}
-
-:::
-
-::: {.column width="35%"}
-
-![**Figure 6.** Proportions of untrustworthy (<60; purple) and trustworthy (>60; green) news tweets.](figures/trustworthiness.png){width="200"}
-
-- robust 6% of untrustworthy news
-
-- anger and fear are overall higher across the whole observation period
 
 :::
 
 :::
 
-
-## Dataset descriptives
-
-::: columns
-
-::: {.column width="65%"}
-
-<br>
-
-
-![**Figure 7.** ROC for each emotion with the true positive rate on the y-axis and the false positive rate on the x-axis for 800 manually annotated tweets.](figures/roc_curve.png){width="500"}
-
-$\rightarrow$ enthusiam was excluded due to low performance
-
-:::
-
-::: {.column width="35%"}
-
-![**Figure 6.** Proportions of untrustworthy (<60; purple) and trustworthy (>60; green) news tweets.](figures/trustworthiness.png){width="200"}
-
-- robust 6% of untrustworthy news 
-
-- anger and fear are overall higher across the whole observation period
-
-:::
-
-:::
-
-
-::: notes
--   For each tweet, we then classified 8 distinct emotions from text
--   This plot shows the covered time frame from October 2020 to March 2022 and we can already see that anger is overall much higher
-:::
-
-## Non-parametric matching
-
-<br>
-
-
-::: columns
-
-::: {.column width="50%"}
-
-![**Figure 8.** Correlations between the covariates used in the matching and emotions in replies.](figures/covariates-correlations.png){width="400"}
-
-
-:::
-
-::: {.column width="50%"}
-::: fragment
-![**Figure 9.** Matching with Nearest Neighbor and Mahalanobis distance [@hoMatchItNonparametricPreprocessing2025].](figures/mahalanobis_plot_all.png){width="500"}
-
-$\rightarrow$ matching mitigates emotional spillover
-
-:::
-:::
-:::
-
-
-
-
-
-
-
-## Effects on engagement
-
-<br>
-
-![**Figure 10.** Marginal effects estimated by zero-inflated negative binomial models (bootstrapped CIs)](figures/effects_engagement.png){width="900"}
-
-$\uparrow$ **more** retweets for tweets with untrustworthy news sources
-
-$\downarrow$ but **fewer** likes & replies
-
-
-## Effects on emotions
-
-<br>
-
-![**Figure 11.** ATE estimated by linear regression (95% CI represent 10,000 
-bootstraps)](figures/effects_emotions.png){width="800" fig-align="left"}
-
-
-$\uparrow$ **more** anger, disgust and fear 
-
-$\downarrow$ and **less** joy in response to untrustworthy sources
-
-::: notes
-- most users replying to untrustworthy news posts also reply to trustworthy news but not vice versa. While 9.6% of
-users wrote 80% of the replies to trustworthy news, only 2.1% wrote 80% of the replies to untrustworthy news.
-:::
-
-## Self-selection dynamics
-
-::: columns
-
-::: {.column width="75%"}
-
-![**Figure 12.** Panel a: CDF of reply contributions (dashed = 80% threshold); Panel b: Anger  for top contributors (accounting for 80% of replies) .](figures/effects_selection_1.png){width="600" fig-align="left"}
-
-:::
-
-::: {.column width="25%"}
-
-:::
-
-:::
-
-
-
-## Self-selection dynamics
-
-::: columns
-
-::: {.column width="75%"}
-
-![**Figure 12.** Panel a: CDF of reply contributions (dashed = 80% threshold); Panel b: Anger  for top contributors (accounting for 80% of replies) .](figures/effects_selection_2.png){width="600" fig-align="left"}
-
-:::
-
-::: {.column width="25%"}
-
-:::
-
-:::
-
-$\rightarrow$ Angrier users preferentially engage, creating self-reinforcement
 
 ## Conclusion
 
--   Sources with lower trustworthiness have lower reach $\rightarrow$ misinformation is a contained problem [@allenEvaluatingFakeNews2020]
 
-    -   **_But_** it spreads through reshares and quote reshares [in line with @guessHowSocialMedia2023's de-activation]
+- Sources with lower trustworthiness have lower reach overall $\rightarrow$ misinformation is a contained problem [@allenEvaluatingFakeNews2020]
 
--   Sources with low trustworthiness predict anger, disgust and fear expressions in following discussions [@mcloughlinMisinformationExploitsOutrage2024; @moslehMisinformationHarmfulLanguage2024]
-
--   Effects are probably limited on a motivated minority with preferences for hostile content [@petersenNeedChaosMotivations2023; @robertsonUsersChooseEngage2023]
+    -   _But_ it spreads through reshares and quote reshares [in line with @guessHowSocialMedia2023's de-activation]
 
 
+- Sources with low trustworthiness predict anger, disgust and fear expressions in following discussions [@mcloughlinMisinformationExploitsOutrage2024; @moslehMisinformationHarmfulLanguage2024]
+
+    -   Most likely driven by a motivated minority with preferences for hostile content [@petersenNeedChaosMotivations2023; @robertsonUsersChooseEngage2023]
+    
 ::: fragment 
 
 > Limitations:<br>
 > - **Source $\neq$ claim:** we estimate effects of source trustworthiness, not of false claims in single posts as well as excluding non-textual content [@nennoPoliticalDisinformationConcentrates2026];<br>
-> - **Unobserved confounders:** topic, timing, algorithmic exposure $\rightarrow$ tweet-level topics, sensitivity analyses;<br>
+> - **Unobserved confounders:** topic, timing, algorithmic exposure $\rightarrow$ tweet-level topics, causal sensitivity analyses, debiasing;<br>
 > - **Missing data:** deleted tweets and suspended accounts
 
 
