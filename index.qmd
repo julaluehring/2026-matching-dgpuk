@@ -292,7 +292,7 @@ digraph DAG {
   edge  [color="#555555", arrowsize=0.8, penwidth=1.3];
 
   // matched confounders (poster side)
-  bias   [label="Source bias", fillcolor="#DCEBF7"];
+  bias   [label="Political bias", fillcolor="#DCEBF7"];
   author [label="Author (followers,\n following, tweets)", fillcolor="#DCEBF7"];
   post   [label="Post (topic,word\ncount, emotions)", fillcolor="#DCEBF7"];
 
@@ -438,7 +438,7 @@ digraph DAG {
   edge  [color="#555555", arrowsize=0.8, penwidth=1.3];
 
   // matched confounders (poster side)
-  bias   [label="Source bias", fillcolor="#DCEBF7"];
+  bias   [label="Political bias", fillcolor="#DCEBF7"];
   author [label="Author (followers,\n following, tweets)", fillcolor="#DCEBF7"];
   post   [label="Post (topic,word\ncount, emotions)", fillcolor="#DCEBF7"];
 
