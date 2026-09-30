@@ -60,7 +60,7 @@ $\rightarrow$ how **harmful** is misinformation on social media then?
 
 
 ::: footer
-<sup>1</sup>*=false information without intention to deceive*  [@wardleInformationDisorderInterdisciplinary2017]; <br>
+<sup>1</sup>=false information without intention to deceive [@wardleInformationDisorderInterdisciplinary2017]; <br>
 <sup>2</sup>depending on measurement and topic [@scharfbilligFracturedReality2026]
 :::
 
@@ -104,7 +104,7 @@ $\rightarrow$ how **harmful** is misinformation on social media then?
 
 ### But they suffer from [low ecological validity]
 
-- artificial stimuli [also because deliberate exposure raises ethical concerns; @lazerMeaningfulMeasuresHuman2021]
+- artificial stimuli [also because deliberate exposure raises ethical concerns,  @lazerMeaningfulMeasuresHuman2021]
 
 - science-friendly samples [e.g., @luhringEmotionsMisinformationStudies2024]
 
@@ -124,7 +124,7 @@ $\rightarrow$ study effects of misinformation where it spreads
 
 
 ::: footer
-<sup>1</sup>*=based on circumplex model [@russellCircumplexModelAffect1980] and<br> constructivist view [@lindquistFunctionalArchitectureHuman2012; @leachSystemsViewEmotion2021]*
+<sup>1</sup>=based on circumplex model [@russellCircumplexModelAffect1980] and<br> constructivist view [@lindquistFunctionalArchitectureHuman2012; @leachSystemsViewEmotion2021]
 :::
 
 ::: notes
@@ -163,7 +163,7 @@ $\rightarrow$ study effects of misinformation where it spreads
 
 ### But it suffers from [low internal validity]
 
--  Confounded by other source cues, hateful and sensationalist language, ...
+-  confounded by other source cues, hateful and sensationalist language, ...
 
     -  e.g., comparing fact-checked false stories to neutral news reports [@vosoughiSpreadTrueFalse2018]
 
@@ -335,11 +335,11 @@ digraph DAG {
 
 <br>
 
-- Keeps the **naturalistic context** of platform data
+- keeps the **naturalistic context** of platform data
 
-- Instead of randomizing users, builds a **synthetic control group** comparable on observed confounders $\rightarrow$ blocks backdoor paths [@hoMatchingNonparametricPreprocessing2007; @pearlBookWhy2019]
+- builds a **synthetic control group** comparable on observed confounders $\rightarrow$ blocks backdoor paths [@hoMatchingNonparametricPreprocessing2007; @pearlBookWhy2019]
 
-- Evaluate performance based on differences
+- evaluate performance based on differences
 
 :::
 
